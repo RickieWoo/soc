@@ -1,0 +1,61 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Wed Jun 06 12:42:24 2018
+| Host         : QH-20120726JNRV running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file PongDriver2018spring_control_sets_placed.rpt
+| Design       : PongDriver2018spring
+| Device       : xc7z010
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     8 |
+| Minimum Number of register sites lost to control set restrictions |    38 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              15 |            6 |
+| Yes          | No                    | No                     |               7 |            2 |
+| Yes          | No                    | Yes                    |              20 |           10 |
+| Yes          | Yes                   | No                     |              30 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+--------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|   Clock Signal   |                      Enable Signal                     |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++------------------+--------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  Clock_IBUF_BUFG |                                                        | Reset_IBUF                                                    |                3 |              5 |
+|  Clock_IBUF_BUFG | gameUnit/paddlePosition[8]_i_1_n_0                     |                                                               |                2 |              7 |
+|  Clock_IBUF_BUFG |                                                        |                                                               |                6 |             10 |
+|  Clock_IBUF_BUFG |                                                        | VGAdisplay/CRTclockUnit/Counter[9]_i_1_n_0                    |                3 |             10 |
+|  Clock_IBUF_BUFG | VGAdisplay/vsyncModule/RestartUnit/E[0]                | Reset_IBUF                                                    |                6 |             10 |
+|  Clock_IBUF_BUFG | VGAdisplay/hsyncModule/PixelClockUnit/E[0]             | Reset_IBUF                                                    |                4 |             10 |
+|  Clock_IBUF_BUFG | gameUnit/missTimer[10]_i_2_n_0                         | VGAdisplay/vsyncModule/YPositionCounter/missTimer_reg[5]_0[0] |                3 |             11 |
+|  Clock_IBUF_BUFG | VGAdisplay/hsyncModule/XPositionCounter/ballX_reg[0]_1 | VGAdisplay/hsyncModule/XPositionCounter/ballX_reg[0]_0[0]     |                6 |             19 |
++------------------+--------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+
+

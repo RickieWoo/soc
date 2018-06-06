@@ -1,0 +1,91 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 36660
+
+Current time: 	6/6/18 12:45:38 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=15
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	E:/APP/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	Administrator
+User directory: C:/Users/Administrator/Documents/soc/pongDriver2018spring_template
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	170 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 467 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 56) elapsed time: 1.7s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Administrator\Documents\soc\pongDriver2018spring_template\pongDriver2018spring_template.xpr. Version: Vivado v2015.2 
+// cp:P (cl:JFrame):  Open Project : addNotify
+// [GUI Memory]: 48 MB (+47638kb) [00:00:09]
+// [Engine Memory]: 366 MB (+232389kb) [00:00:09]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+92kb) [00:00:11]
+// [Engine Memory]: 404 MB (+20683kb) [00:00:11]
+// [GUI Memory]: 56 MB (+3528kb) [00:00:12]
+// [Engine Memory]: 447 MB (+24132kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/APP/Xilinx/Vivado/2015.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 467 MB. GUI used memory: 35 MB. Current time: 6/6/18 12:45:38 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: pongDriver2018spring_template; location: C:/Users/Administrator/Documents/soc/pongDriver2018spring_template; part: xc7z010clg400-1
+// [Engine Memory]: 471 MB (+885kb) [00:00:17]
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 722.176 ; gain = 136.414 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PongDriver2018spring (PongDriver2018spring.v)]", 1); // A:k (H:JPanel, cl:JFrame)
+// PAPropertyPanels.initPanels (GameZybo.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PongDriver2018spring (PongDriver2018spring.v), gameUnit - gameZybo (GameZybo.v)]", 3, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PongDriver2018spring (PongDriver2018spring.v), gameUnit - gameZybo (GameZybo.v)]", 3, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// [GUI Memory]: 63 MB (+4134kb) [00:00:32]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PongDriver2018spring (PongDriver2018spring.v), gameUnit - gameZybo (GameZybo.v)]", 3, false); // A:k (H:JPanel, cl:JFrame)
+selectCodeEditor("GameZybo.v", 161, 207); // bj:J (JPanel:JComponent, cl:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "628"); // o:ao (f:JComboBox, cl:JFrame)
+selectCodeEditor("GameZybo.v", 293, 514); // bj:J (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 488 MB. GUI used memory: 37 MB. Current time: 6/6/18 12:46:03 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

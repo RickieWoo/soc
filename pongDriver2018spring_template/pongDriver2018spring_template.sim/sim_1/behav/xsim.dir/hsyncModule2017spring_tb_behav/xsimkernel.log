@@ -2,3 +2,6 @@ Running: xsim.dir/hsyncModule2017spring_tb_behav/xsimk.exe -simmode gui -wdb hsy
 Design successfully loaded
 Design Loading Memory Usage: 20388 KB (Peak: 20388 KB)
 Design Loading CPU Usage: 701 ms
+Simulation completed
+Simulation Memory Usage: 20836 KB (Peak: 20836 KB)
+Simulation CPU Usage: 764 ms

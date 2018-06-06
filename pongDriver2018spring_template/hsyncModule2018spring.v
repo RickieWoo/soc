@@ -12,6 +12,8 @@
 
 module hsyncModule2018spring(PixelClock, SynchPulse, BackPorch, ActiveVideo, FrontPorch, hsync, LineEnd, xposition, reset, clock);
 parameter xresolution=10;
+parameter BeginX = 10'd0;
+parameter BeginY = 10'd0;
 input [xresolution-1:0] SynchPulse, FrontPorch, ActiveVideo, BackPorch;
 input PixelClock, reset, clock;
 output hsync, LineEnd;
@@ -28,6 +30,6 @@ assign hsync = ~(xcount>=(ActiveVideo+FrontPorch)&&xcount<=(ActiveVideo+FrontPor
 always@(xcount, SynchPulse, BackPorch, ActiveVideo, FrontPorch) 
 	xposition<=xcount;	//the game circuit does not work if xposition does not run from 0 to 800. JJS
 //module UniversalCounter10bitsV5(P,BeginCount, EndCount, Q,S1,S0,TerminalCount, Reset, CLOCK);
-UniversalCounter10bits XPositionCounter(10'd0,10'd0, EndCount, xcount, LineEnd,LineEnd||PixelClockOneShot,   , reset, clock) ;
+UniversalCounter10bits XPositionCounter(BeginX, BeginY, EndCount, xcount, LineEnd,LineEnd||PixelClockOneShot,   , reset, clock) ;
 
 endmodule

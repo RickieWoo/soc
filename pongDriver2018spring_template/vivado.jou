@@ -2,60 +2,10 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Wed Jun 06 10:32:48 2018
-# Process ID: 17852
+# Start of session at: Wed Jun 06 12:45:16 2018
+# Process ID: 36660
 # Log file: C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/vivado.log
 # Journal file: C:/Users/Administrator/Documents/soc/pongDriver2018spring_template\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.xpr
-synth_design -rtl -name rtl_1
-file mkdir C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v w ]
-add_files -fileset sim_1 C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v
-update_compile_order -fileset sim_1
-launch_simulation
-source hsyncModule2017spring_tb.tcl
-close_sim
-launch_simulation
-source hsyncModule2017spring_tb.tcl
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top clockTest [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-source clockTest.tcl
-close_sim
-launch_simulation
-source clockTest.tcl
-close_sim
-launch_simulation
-source clockTest.tcl
-close_sim
-launch_simulation
-source clockTest.tcl
-close_sim
-launch_simulation
-source clockTest.tcl
-close_sim
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-source clockTest.tcl
-close_sim
-launch_simulation
-source clockTest.tcl
-close_sim
-launch_simulation
-source clockTest.tcl
-close_sim
-launch_simulation
-source clockTest.tcl

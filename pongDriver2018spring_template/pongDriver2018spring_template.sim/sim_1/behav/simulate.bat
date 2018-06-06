@@ -1,6 +1,6 @@
 @echo off
 set xv_path=E:\\APP\\Xilinx\\Vivado\\2015.2\\bin
-call %xv_path%/xsim clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch clockTest.tcl -log simulate.log
+call %xv_path%/xsim vsyncModule2018spring_tb_behav -key {Behavioral:sim_1:Functional:vsyncModule2018spring_tb} -tclbatch vsyncModule2018spring_tb.tcl -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END

@@ -70,7 +70,7 @@ wire visible = (xpos < 640 && ypos < 480);
 wire top = (visible && ypos <= 5);
 wire bottom = (visible && ypos >= 476);
 wire left = (visible && xpos <= 5);
-wire right = (visible && xpos >= 636);
+wire right = (visible && xpos >= 630);
 wire border = (visible && (left || right || top));
 wire paddle = (xpos >= paddlePosition+4 && xpos <= paddlePosition+124 && ypos >= 440 && ypos <= 447);
 wire ball = (xpos >= ballX && xpos <= ballX+7 && ypos >= ballY && ypos <= ballY+7);
