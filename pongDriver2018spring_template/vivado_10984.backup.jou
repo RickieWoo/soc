@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Jun 05 13:29:36 2018
+# Process ID: 5352
+# Log file: C:/Xilinx/labs2018spring/pongDriver2018spring_template/vivado.log
+# Journal file: C:/Xilinx/labs2018spring/pongDriver2018spring_template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.xpr
+remove_files -fileset sim_1 {C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.srcs/sim_1/imports/pongDriver2017spring_template/hsyncModule2017spring_tb.v C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.srcs/sim_1/imports/pongDriver2017spring_template/vsyncModule2017spring_tb.v}
+file delete -force C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.srcs/sim_1/imports/pongDriver2017spring_template/hsyncModule2017spring_tb.v C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.srcs/sim_1/imports/pongDriver2017spring_template/vsyncModule2017spring_tb.v
+launch_simulation
+source hsyncModule2017spring_tb.tcl
+remove_files C:/Xilinx/labs2018spring/pongDriver2018spring_template/PongDriver2018spring.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files C:/Xilinx/labs2018spring/pongDriver2018spring_template/CRTcontroller2018spring.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files C:/Xilinx/labs2018spring/pongDriver2018spring_template/CRTClock2018spring_template.v
+remove_files C:/Xilinx/labs2018spring/pongDriver2018spring_template/GameZybo.v
+close_sim

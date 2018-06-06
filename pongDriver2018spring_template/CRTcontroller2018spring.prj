@@ -1,0 +1,6 @@
+verilog work "UniversalCounter10bits.v"
+verilog work "ClockedNegativeOneShot.v"
+verilog work "vsyncModule2018spring_template.v"
+verilog work "hsyncModule2018spring.v"
+verilog work "CRTClock2018spring_template.v"
+verilog work "CRTcontroller2018spring.v"

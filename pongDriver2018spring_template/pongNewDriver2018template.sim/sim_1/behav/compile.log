@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/labs2018spring/pongDriver2018spring_template/ClockedNegativeOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockedNegativeOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/labs2018spring/pongDriver2018spring_template/UniversalCounter10bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UniversalCounter10bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/labs2018spring/pongDriver2018spring_template/hsyncModule2018spring.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2018spring
+WARNING: [VRFC 10-756] identifier EndCount is used before its declaration [C:/Xilinx/labs2018spring/pongDriver2018spring_template/hsyncModule2018spring.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/labs2018spring/pongDriver2018spring_template/hsyncModule2018spring_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2017spring_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

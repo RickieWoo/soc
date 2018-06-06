@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Jun 05 13:30:33 2018
+# Process ID: 7904
+# Log file: C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Xilinx/labs2018spring/pongDriver2018spring_template/pongNewDriver2018template.sim/sim_1/behav/xsim.dir/hsyncModule2017spring_tb_behav/webtalk/xsim_webtalk.tcl -notrace

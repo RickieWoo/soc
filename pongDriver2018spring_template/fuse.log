@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/summer2018/HUST/2018HUST/Software and Hardware Codesign2018/lectures2018springCoDesign/lecture7_8pring2018 VGA in Verilog/pongDriver2018spring_template/hsyncModule2017spring_tb_isim_beh.exe -prj C:/Users/summer2018/HUST/2018HUST/Software and Hardware Codesign2018/lectures2018springCoDesign/lecture7_8pring2018 VGA in Verilog/pongDriver2018spring_template/hsyncModule2017spring_tb_beh.prj work.hsyncModule2017spring_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/summer2018/HUST/2018HUST/Software and Hardware Codesign2018/lectures2018springCoDesign/lecture7_8pring2018 VGA in Verilog/pongDriver2018spring_template/UniversalCounter10bits.v" into library work
+Analyzing Verilog file "C:/Users/summer2018/HUST/2018HUST/Software and Hardware Codesign2018/lectures2018springCoDesign/lecture7_8pring2018 VGA in Verilog/pongDriver2018spring_template/ClockedNegativeOneShot.v" into library work
+Analyzing Verilog file "C:/Users/summer2018/HUST/2018HUST/Software and Hardware Codesign2018/lectures2018springCoDesign/lecture7_8pring2018 VGA in Verilog/pongDriver2018spring_template/hsyncModule2018spring.v" into library work
+Analyzing Verilog file "C:/Users/summer2018/HUST/2018HUST/Software and Hardware Codesign2018/lectures2018springCoDesign/lecture7_8pring2018 VGA in Verilog/pongDriver2018spring_template/hsyncModule2018spring_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ClockedNegativeOneShot
+Compiling module UniversalCounter10bits
+Compiling module hsyncModule2018spring
+Compiling module hsyncModule2017spring_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+FATAL_ERROR:Simulator:Fuse.cpp:209:1.133 - Failed to compile one of the generated C files. Please recompile with -mt off -v 1 switch to identify which design unit failed.  For technical support on this issue, please visit http://www.xilinx.com/support.

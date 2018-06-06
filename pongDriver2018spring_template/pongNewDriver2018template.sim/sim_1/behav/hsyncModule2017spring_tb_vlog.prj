@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../ClockedNegativeOneShot.v"
+verilog xil_defaultlib  "../../../UniversalCounter10bits.v"
+verilog xil_defaultlib  "../../../hsyncModule2018spring.v"
+verilog xil_defaultlib  "../../../hsyncModule2018spring_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
