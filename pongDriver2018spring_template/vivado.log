@@ -1,0 +1,995 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jun 06 10:32:48 2018
+# Process ID: 17852
+# Log file: C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/vivado.log
+# Journal file: C:/Users/Administrator/Documents/soc/pongDriver2018spring_template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Xilinx/labs2018spring/pongDriver2018spring_template' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/APP/Xilinx/Vivado/2015.2/data/ip'.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: PongDriver2018spring
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:39 ; elapsed = 00:09:06 . Memory (MB): peak = 794.059 ; gain = 616.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PongDriver2018spring' [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/PongDriver2018spring.v:11]
+	Parameter NumberofPixels bound to: 10'b1010000000 
+	Parameter NumberofLines bound to: 10'b0111100000 
+	Parameter SystemClock bound to: 10'b0001111101 
+	Parameter CRTClock bound to: 10'b0000011001 
+INFO: [Synth 8-638] synthesizing module 'CRTcontroller2018spring' [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTcontroller2018spring.v:15]
+	Parameter ResolutionSize bound to: 10 - type: integer 
+	Parameter SystemClockSize bound to: 10 - type: integer 
+	Parameter vSynchPulse bound to: 10'b0000000010 
+	Parameter vFrontPorch bound to: 10'b0000001010 
+	Parameter vBackPorch bound to: 10'b0000011101 
+	Parameter hSynchPulse bound to: 10'b0001011111 
+	Parameter hFrontPorch bound to: 10'b0000011001 
+	Parameter hBackPorch bound to: 10'b0000101000 
+INFO: [Synth 8-638] synthesizing module 'hsyncModule2018spring' [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/hsyncModule2018spring.v:13]
+	Parameter xresolution bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ClockedNegativeOneShot' [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/ClockedNegativeOneShot.v:6]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockedNegativeOneShot' (1#1) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/ClockedNegativeOneShot.v:6]
+INFO: [Synth 8-638] synthesizing module 'UniversalCounter10bits' [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/UniversalCounter10bits.v:6]
+	Parameter length bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UniversalCounter10bits' (2#1) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/UniversalCounter10bits.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hsyncModule2018spring' (3#1) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/hsyncModule2018spring.v:13]
+INFO: [Synth 8-638] synthesizing module 'vsyncModule2018spring_template' [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/vsyncModule2018spring_template.v:8]
+	Parameter yresolution bound to: 10 - type: integer 
+WARNING: [Synth 8-3848] Net vsync in module/entity vsyncModule2018spring_template does not have driver. [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/vsyncModule2018spring_template.v:12]
+WARNING: [Synth 8-3848] Net yposition in module/entity vsyncModule2018spring_template does not have driver. [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/vsyncModule2018spring_template.v:13]
+INFO: [Synth 8-256] done synthesizing module 'vsyncModule2018spring_template' (4#1) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/vsyncModule2018spring_template.v:8]
+INFO: [Synth 8-638] synthesizing module 'CRTClock2018spring_template' [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:6]
+	Parameter SystemClockSize bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CRTClock2018spring_template' (5#1) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:6]
+INFO: [Synth 8-256] done synthesizing module 'CRTcontroller2018spring' (6#1) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTcontroller2018spring.v:15]
+INFO: [Synth 8-638] synthesizing module 'gameZybo' [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/GameZybo.v:11]
+INFO: [Synth 8-256] done synthesizing module 'gameZybo' (7#1) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/GameZybo.v:11]
+INFO: [Synth 8-256] done synthesizing module 'PongDriver2018spring' (8#1) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/PongDriver2018spring.v:11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:42 ; elapsed = 00:09:10 . Memory (MB): peak = 827.270 ; gain = 649.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:43 ; elapsed = 00:09:10 . Memory (MB): peak = 827.270 ; gain = 649.309
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/constrs_1/imports/pongDriver2018spring_template/PongDriver2018spring.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/constrs_1/imports/pongDriver2018spring_template/PongDriver2018spring.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-141] Inserted 18 OBUFs to IO ports without IO buffers.
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:26 ; elapsed = 00:09:42 . Memory (MB): peak = 1118.578 ; gain = 940.617
+20 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:44 . Memory (MB): peak = 1118.578 ; gain = 328.320
+file mkdir C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v w ]
+add_files -fileset sim_1 C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'hsyncModule2017spring_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj hsyncModule2017spring_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/ClockedNegativeOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockedNegativeOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/UniversalCounter10bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UniversalCounter10bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/hsyncModule2018spring.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2018spring
+WARNING: [VRFC 10-756] identifier EndCount is used before its declaration [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/hsyncModule2018spring.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/hsyncModule2018spring_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2017spring_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hsyncModule2017spring_tb_behav xil_defaultlib.hsyncModule2017spring_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClockedNegativeOneShot
+Compiling module xil_defaultlib.UniversalCounter10bits
+Compiling module xil_defaultlib.hsyncModule2018spring
+Compiling module xil_defaultlib.hsyncModule2017spring_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot hsyncModule2017spring_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/hsyncModule2017spring_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/hsyncModule2017spring_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 11:34:54 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 11:34:54 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1140.055 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hsyncModule2017spring_tb_behav -key {Behavioral:sim_1:Functional:hsyncModule2017spring_tb} -tclbatch {hsyncModule2017spring_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source hsyncModule2017spring_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hsyncModule2017spring_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1152.723 ; gain = 12.668
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1181.594 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'hsyncModule2017spring_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj hsyncModule2017spring_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/ClockedNegativeOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockedNegativeOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/UniversalCounter10bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UniversalCounter10bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/hsyncModule2018spring.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2018spring
+WARNING: [VRFC 10-756] identifier EndCount is used before its declaration [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/hsyncModule2018spring.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/hsyncModule2018spring_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2017spring_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hsyncModule2017spring_tb_behav xil_defaultlib.hsyncModule2017spring_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClockedNegativeOneShot
+Compiling module xil_defaultlib.UniversalCounter10bits
+Compiling module xil_defaultlib.hsyncModule2018spring
+Compiling module xil_defaultlib.hsyncModule2017spring_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 3 sub-compilation(s) to finish...
+Built simulation snapshot hsyncModule2017spring_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/hsyncModule2017spring_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/hsyncModule2017spring_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 11:37:14 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 11:37:14 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1181.594 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hsyncModule2017spring_tb_behav -key {Behavioral:sim_1:Functional:hsyncModule2017spring_tb} -tclbatch {hsyncModule2017spring_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source hsyncModule2017spring_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hsyncModule2017spring_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1181.594 ; gain = 0.000
+set_property top clockTest [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+ERROR: [VRFC 10-91] clock is not declared [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:17]
+ERROR: [VRFC 10-1040] module CRTClock2018spring_template ignored due to previous errors [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:6]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+ERROR: [VRFC 10-91] clock is not declared [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:17]
+ERROR: [VRFC 10-1040] module CRTClock2018spring_template ignored due to previous errors [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:6]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1047] module instantiation should have an instance name [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:42]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 11:43:20 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 11:43:20 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1181.594 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:01:29 . Memory (MB): peak = 1183.574 ; gain = 1.980
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:01:32 . Memory (MB): peak = 1183.574 ; gain = 1.980
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:01:43 . Memory (MB): peak = 1183.574 ; gain = 1.980
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.574 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 11:45:45 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 11:45:45 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1183.574 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1183.574 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.574 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 11:46:55 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 11:46:55 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1183.574 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 1183.574 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.664 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 11:51:19 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 11:51:19 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.664 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1183.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.664 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 11:53:02 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 11:53:02 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1183.664 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1183.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1183.664 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+ERROR: [VRFC 10-1412] syntax error near ) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:27]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:31]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:35]
+ERROR: [VRFC 10-1412] syntax error near else [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:39]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:44]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:48]
+ERROR: [VRFC 10-60] SystemClockFreq is not a constant [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:40]
+ERROR: [VRFC 10-60] oddFirst is not a constant [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:42]
+ERROR: [VRFC 10-51] Counter is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:44]
+ERROR: [VRFC 10-51] Counter is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:48]
+ERROR: [VRFC 10-51] PixelClock is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:49]
+ERROR: [VRFC 10-51] oddFirst is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:50]
+ERROR: [VRFC 10-1040] module CRTClock2018spring_template ignored due to previous errors [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:6]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+ERROR: [VRFC 10-1412] syntax error near ) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:27]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:31]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:35]
+ERROR: [VRFC 10-1412] syntax error near else [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:39]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:44]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:48]
+ERROR: [VRFC 10-60] SystemClockFreq is not a constant [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:40]
+ERROR: [VRFC 10-60] oddFirst is not a constant [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:42]
+ERROR: [VRFC 10-51] Counter is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:44]
+ERROR: [VRFC 10-51] Counter is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:48]
+ERROR: [VRFC 10-51] PixelClock is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:49]
+ERROR: [VRFC 10-51] oddFirst is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:50]
+ERROR: [VRFC 10-1040] module CRTClock2018spring_template ignored due to previous errors [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:6]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+ERROR: [VRFC 10-1412] syntax error near ) [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:27]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:31]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:35]
+ERROR: [VRFC 10-1412] syntax error near else [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:39]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:44]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:48]
+ERROR: [VRFC 10-60] SystemClockFreq is not a constant [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:40]
+ERROR: [VRFC 10-60] oddFirst is not a constant [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:42]
+ERROR: [VRFC 10-51] Counter is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:44]
+ERROR: [VRFC 10-51] Counter is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:48]
+ERROR: [VRFC 10-51] PixelClock is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:49]
+ERROR: [VRFC 10-51] oddFirst is an unknown type [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:50]
+ERROR: [VRFC 10-1040] module CRTClock2018spring_template ignored due to previous errors [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v:6]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 12:08:51 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 12:08:51 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1183.664 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1183.664 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1189.711 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 12:15:41 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 12:15:41 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1189.711 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1189.711 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1189.711 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 12:18:32 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 12:18:32 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1189.711 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1189.711 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1189.711 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/hsyncModule2017spring_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clockTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+"xvlog -m64 --relax -prj clockTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/xsim.dir/clockTest_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 06 12:19:34 2018. For additional details about this file, please refer to the WebTalk help file at E:/APP/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 63.473 ; gain = 0.027
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 06 12:19:34 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1189.711 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clockTest_behav -key {Behavioral:sim_1:Functional:clockTest} -tclbatch {clockTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source clockTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clockTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1189.711 ; gain = 0.000

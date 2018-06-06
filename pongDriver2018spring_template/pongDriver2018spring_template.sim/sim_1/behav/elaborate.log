@@ -1,0 +1,15 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/APP/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 2c2eccde2e7c4544be63a10ebadaacd0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clockTest_behav xil_defaultlib.clockTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 10 for port SystemClockFreq [C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CRTClock2018spring_template
+Compiling module xil_defaultlib.clockTest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot clockTest_behav

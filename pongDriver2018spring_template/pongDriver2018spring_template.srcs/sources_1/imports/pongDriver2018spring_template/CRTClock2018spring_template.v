@@ -13,5 +13,24 @@ input Reset, Clock;
 
 reg 	[SystemClockSize-1:0]  Counter;
 
+
+ always @(posedge Clock)
+      if(Reset==1)
+            begin
+                PixelClock <= 0;
+                Counter <= 0;       
+            end
+      else
+        if(Counter < (SystemClockFreq / (CRTClockFreq*2)-1))
+            begin
+                Counter <= Counter + 1'b1;
+                PixelClock <= PixelClock;
+            end
+      else
+        begin
+            Counter <= 0;
+            PixelClock <= ~PixelClock;
+        end
+            
 endmodule
 

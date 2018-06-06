@@ -1,0 +1,4 @@
+Running: xsim.dir/hsyncModule2017spring_tb_behav/xsimk.exe -simmode gui -wdb hsyncModule2017spring_tb_behav.wdb -simrunnum 0 -socket 52560
+Design successfully loaded
+Design Loading Memory Usage: 20388 KB (Peak: 20388 KB)
+Design Loading CPU Usage: 701 ms

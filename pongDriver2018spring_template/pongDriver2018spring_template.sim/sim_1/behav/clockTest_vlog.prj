@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v"
+verilog xil_defaultlib  "../../../pongDriver2018spring_template.srcs/sim_1/new/clockTest.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

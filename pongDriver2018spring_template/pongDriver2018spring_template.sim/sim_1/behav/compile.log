@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sources_1/imports/pongDriver2018spring_template/CRTClock2018spring_template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2018spring_template
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.srcs/sim_1/new/clockTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Documents/soc/pongDriver2018spring_template/pongDriver2018spring_template.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
