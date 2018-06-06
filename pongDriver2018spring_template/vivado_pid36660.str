@@ -89,3 +89,55 @@ selectCodeEditor("GameZybo.v", 293, 514); // bj:J (JPanel:JComponent, cl:JFrame)
 // TclEventType: DG_UPDATE_GRAPH
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 488 MB. GUI used memory: 36 MB. Current time: 6/6/18 1:48:42 PM CST
+// [GUI Memory]: 66 MB (+119kb) [01:11:16]
+// [GUI Memory]: 70 MB (+306kb) [01:20:18]
+// Elapsed time: 5154 seconds
+selectCodeEditor("GameZybo.v", 310, 318); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("GameZybo.v", 163, 511); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 74 MB (+429kb) [01:31:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 490 MB. GUI used memory: 36 MB. Current time: 6/6/18 2:18:44 PM CST
+// [GUI Memory]: 78 MB (+678kb) [01:54:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 494 MB. GUI used memory: 37 MB. Current time: 6/6/18 2:48:45 PM CST
+// [GUI Memory]: 82 MB (+95kb) [02:15:09]
+// [Engine Memory]: 494 MB (+260kb) [02:16:21]
+// Elapsed time: 2954 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PongDriver2018spring (PongDriver2018spring.v)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PongDriver2018spring (PongDriver2018spring.v)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PongDriver2018spring (PongDriver2018spring.v)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectCodeEditor("PongDriver2018spring.v", 233, 285); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("PongDriver2018spring.v", 257, 336); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 521, 406); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 384, 428); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 384, 428, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("PongDriver2018spring.v", 537, 434); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 537, 434, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("PongDriver2018spring.v", 531, 457); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 105, 476); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 105, 476, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("PongDriver2018spring.v", 285, 470); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 185, 473); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 185, 473, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("PongDriver2018spring.v", 522, 510); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 25 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PongDriver2018spring (PongDriver2018spring.v)]", 1); // A:k (H:JPanel, cl:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("PongDriver2018spring.v", 286, 247); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 140, 478); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 348, 471); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 348, 471, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("PongDriver2018spring.v", 348, 471); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 619, 451); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 252, 331); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 210, 307); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 210, 307, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("PongDriver2018spring.v", 210, 307); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 401, 323); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 232, 433); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 232, 433, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("PongDriver2018spring.v", 389, 449); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("PongDriver2018spring.v", 196, 489); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("PongDriver2018spring.v", 191, 492); // bj:J (JPanel:JComponent, cl:JFrame)
